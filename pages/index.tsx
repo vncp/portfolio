@@ -16,7 +16,7 @@ const Home = () => {
       <Head>
         <title>Portfolio - Vincent Pham</title>
       </Head>
-      <Navbar title="vincent-pham"></Navbar>
+      <Navbar title="vincent pham"></Navbar>
       <div className="intro-content">
         <div className="intro-container">
           <div className="intro-bold" style={{ fontSize: "30pt" }}>

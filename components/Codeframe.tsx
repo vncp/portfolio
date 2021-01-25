@@ -1,11 +1,19 @@
 import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
 import IntroScene from "../components/IntroScene";
+import Rotation from "../components/Rotation";
 
 const CodeFrame = () => {
   return (
     <div className={styles.background}>
-      <IntroScene />
+      <h1 className={styles.heading}>
+        I'm an aspiring{" "}
+        <Rotation
+          className={styles.rotate}
+          words={["engineer", "developer", "designer"]}
+        ></Rotation>
+        <span className={styles.blink}>|</span>
+      </h1>
       <div className={styles.frame}>
         <div className={styles.windowTitle}>
           <span></span>info
@@ -43,8 +51,12 @@ const CodeFrame = () => {
             </a>
             '
           </p>
-          <p className={styles.command}>{">>"}incent.hobbies</p>
+          <p className={styles.command}>{">>"}Vincent.hobbies</p>
           <p className={styles.output}>['running', 'coding', 'reading']</p>
+          <p className={styles.command}>
+            {">>"}
+            <span className={styles.blink}>_</span>
+          </p>
         </div>
       </div>
     </div>

@@ -3,29 +3,49 @@
   top: 0;
   background-color: #ebb48f;
   width: 100vw;
-  height: 1600px;
+  height: 1350px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .frame {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   justify-content: flex-end;
   border-radius: 10px;
   width: 50vw;
-  height: 37vw;
+  height: 43.8vw;
   background-color: rgb(173, 173, 173);
   box-shadow: 5px 5px 20px 5px;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .terminal {
   position: relative;
   top: 1px;
-  height: 36vw;
-  border-bottom-left-radius: 10px;
+  height: 60vw;
+  border-bottom-left-radiu4350: 10px;
   border-bottom-right-radius: 10px;
   width: 50vw;
   background-color: rgb(39, 39, 39);
@@ -47,6 +67,16 @@
   border-radius: 5px;
 }
 
+.heading {
+  font-family: "Source Code Pro";
+  color: rgb(15, 15, 15);
+  font-size: 20pt;
+  font-weight: 500;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
 .command {
   height: 0rem;
   position: relative;
@@ -55,8 +85,9 @@
   top: 30px;
   font-family: "Source Code Pro";
   color: rgb(255, 255, 255);
-  font-size: 14pt;
+  font-size: 1.2vw;
   text-align: left;
+  margin-bottom: 1.5vw;
 }
 
 .output {
@@ -67,7 +98,7 @@
   top: 20px;
   font-family: "Source Code Pro";
   color: rgb(219, 219, 219);
-  font-size: 12pt;
+  font-size: 1.2vw;
   text-align: left;
 }
 
@@ -80,7 +111,7 @@
   top: 30px;
   font-family: "Source Code Pro";
   color: rgb(204, 203, 203);
-  font-size: 12pt;
+  font-size: 1.2vw;
   text-align: left;
   margin: 0.5rem 0 0.5rem 0;
 }
