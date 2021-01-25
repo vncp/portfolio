@@ -1,0 +1,98 @@
+.background {
+  position: absolute;
+  top: 0;
+  background-color: #ebb48f;
+  width: 100vw;
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  width: 50vw;
+  height: 37vw;
+  background-color: rgb(173, 173, 173);
+  box-shadow: 5px 5px 20px 5px;
+}
+
+.terminal {
+  position: relative;
+  top: 1px;
+  height: 36vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 50vw;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-basis: fit-content;
+  overflow-y: scroll;
+}
+
+.terminal::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.terminal::-webkit-scrollbar-thumb {
+  box-shadow: inset 2px 1px 10px rgb(54, 54, 54);
+  border-radius: 5px;
+}
+
+.command {
+  height: 0rem;
+  position: relative;
+  word-wrap: break-word;
+  left: 50px;
+  top: 30px;
+  font-family: "Source Code Pro";
+  color: rgb(255, 255, 255);
+  font-size: 14pt;
+  text-align: left;
+}
+
+.output {
+  height: 0.6rem;
+  position: relative;
+  word-wrap: break-word;
+  left: 100px;
+  top: 20px;
+  font-family: "Source Code Pro";
+  color: rgb(219, 219, 219);
+  font-size: 12pt;
+  text-align: left;
+}
+
+.outputS {
+  height: 0.6rem;
+  position: relative;
+  word-wrap: break-word;
+  padding: 0.1rem;
+  left: 100px;
+  top: 30px;
+  font-family: "Source Code Pro";
+  color: rgb(204, 203, 203);
+  font-size: 12pt;
+  text-align: left;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.windowTitle {
+  margin-top: 5px;
+  font-family: "Source Code Pro";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
+  color: rgb(162, 198, 255);
+}

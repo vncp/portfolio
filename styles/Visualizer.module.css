@@ -1,0 +1,28 @@
+.array-element {
+  left: 5%;
+  width: 0.4vw;
+  display: inline-block;
+  background-color: goldenrod;
+  margin: 0 1px;
+}
+
+.array-container {
+  position: relative;
+  background-color: blanchedalmond;
+  margin: auto;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.interactions {
+  margin: 5px 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  padding: 0 0 0 0;
+  transform: -50% 0;
+}
