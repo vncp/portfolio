@@ -1,6 +1,5 @@
 import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
-import IntroScene from "../components/IntroScene";
 import Rotation from "../components/Rotation";
 
 const CodeFrame = () => {
@@ -8,10 +7,7 @@ const CodeFrame = () => {
     <div className={styles.background}>
       <h1 className={styles.heading}>
         I'm an aspiring{" "}
-        <Rotation
-          className={styles.rotate}
-          words={["engineer", "developer", "designer"]}
-        ></Rotation>
+        <Rotation words={["engineer", "developer", "designer"]}></Rotation>
         <span className={styles.blink}>|</span>
       </h1>
       <div className={styles.frame}>
