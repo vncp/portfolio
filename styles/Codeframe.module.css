@@ -1,7 +1,5 @@
 .background {
-  position: absolute;
-  top: 0;
-  background-color: #ebb48f;
+  background-color: #402e32;
   width: 100vw;
   height: 1350px;
   display: flex;
@@ -45,7 +43,7 @@
   position: relative;
   top: 1px;
   height: 60vw;
-  border-bottom-left-radiu4350: 10px;
+  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 50vw;
   background-color: rgb(39, 39, 39);
@@ -69,7 +67,7 @@
 
 .heading {
   font-family: "Source Code Pro";
-  color: rgb(15, 15, 15);
+  color: rgb(230, 230, 230);
   font-size: 20pt;
   font-weight: 500;
   margin-top: 200px;

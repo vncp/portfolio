@@ -2,17 +2,32 @@
   font-family: "Robotto";
   src: url("../public/fonts/Roboto/RobotoMono-VariableFont_wght.ttf");
   font-style: normal;
-  font-weight: 50;
+  font-weight: 200;
   font-display: swap;
 }
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
+
+@font-face {
+  font-family: "RobottoB";
+  src: url("../public/fonts/Roboto/RobotoMono-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "RobottoI";
   src: url("../public/fonts/Roboto/RobotoMono-Italic-VariableFont_wght.ttf");
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Karla";
+  src: url("../public/fonts/Karla-VariableFont_wght.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
 
 .heading {
   font-size: 20pt;
@@ -30,13 +45,14 @@
   max-width: 100vw;
   top: 100px;
   background-image: linear-gradient(#fff, #888);
-  height: 100vh;
+  height: auto;
 }
 
 .intro-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .intro-bold {

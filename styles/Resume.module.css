@@ -1,0 +1,60 @@
+.root {
+  width: 100vw;
+  height: auto;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  background-color: #fff7ef;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: rgb(29, 29, 29);
+  font-size: 18pt;
+  font-family: RobottoB, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.entryContainer {
+  font-family: Karla, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.topicTitle {
+  font-size: 22pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 60%;
+  margin: 5px 0;
+}
+
+.titleSeparator {
+  height: 1px;
+  width: 60%;
+  border-top: solid;
+  border-color: rgb(218, 218, 218);
+  margin-bottom: 15px;
+}
+
+.entryTitleTopic {
+  font-size: 14pt;
+  margin-bottom: 20px;
+}
+
+.entryTitle {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.entryContent {
+  font-size: 19px;
+}

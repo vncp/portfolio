@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import CodeFrame from "../components/Codeframe";
+import Resume from "../components/Resume";
 
 const Home = () => {
   return (
@@ -14,15 +15,18 @@ const Home = () => {
       }}
     >
       <Head>
-        <title>Portfolio - Vincent Pham</title>
+        <title>Vincent Pham</title>
       </Head>
       <Navbar title="vincent pham"></Navbar>
       <div className="intro-content">
+        <div className="intro-bold" style={{ fontSize: "30pt" }}>
+          Why hello there! (I was hiding)
+        </div>
         <div className="intro-container">
-          <div className="intro-bold" style={{ fontSize: "30pt" }}>
-            Why hello there! (I was hiding)
-          </div>
           <CodeFrame></CodeFrame>
+        </div>
+        <div className="intro-container">
+          <Resume></Resume>
         </div>
       </div>
     </div>
