@@ -155,3 +155,9 @@
     width: 90vw;
   }
 }
+
+@media (min-width: 2000px) {
+  .heading {
+    font-size: 2vw;
+  }
+}

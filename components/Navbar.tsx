@@ -11,9 +11,12 @@ export const Navbar = (props) => {
   return (
     <nav className={styles["navbar"]}>
       <ul className={styles["navbar-nav"]}>
-        <NavItem href="/" icon={<HomeIcon></HomeIcon>}></NavItem>
-        <span className="heading">{props.title}</span>
-        <NavItem icon={<MenuIcon></MenuIcon>}>
+        <NavItem
+          href="/"
+          icon={<HomeIcon className={styles.iconGraphic}></HomeIcon>}
+        ></NavItem>
+        <span className={styles.heading}>{props.title}</span>
+        <NavItem icon={<MenuIcon className={styles.iconGraphic}></MenuIcon>}>
           <DropdownMenu></DropdownMenu>
         </NavItem>
       </ul>
@@ -60,13 +63,22 @@ export const DropdownMenu = (props) => {
   return (
     <div className={styles["dropdown"]}>
       <div className={styles["menu"]}>
-        <DropdownItem href="/about" leftIcon={<PersonIcon />}>
+        <DropdownItem
+          href="/about"
+          leftIcon={<PersonIcon className={styles.iconGraphic} />}
+        >
           About Me
         </DropdownItem>
-        <DropdownItem href="/projects" leftIcon={<AccountTreeIcon />}>
+        <DropdownItem
+          href="/projects"
+          leftIcon={<AccountTreeIcon className={styles.iconGraphic} />}
+        >
           Projects
         </DropdownItem>
-        <DropdownItem href="/blog" leftIcon={<LibraryBooksIcon />}>
+        <DropdownItem
+          href="/blog"
+          leftIcon={<LibraryBooksIcon className={styles.iconGraphic} />}
+        >
           Blog
         </DropdownItem>
       </div>

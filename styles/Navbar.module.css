@@ -17,6 +17,19 @@
   --dropdown-opacity: 80%;
 }
 
+.heading {
+  font-size: 20pt;
+  font-family: Robotto, sans-serif;
+  font-weight: 100;
+  color: whitesmoke;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: -50% 0;
+}
+
 .navbar-nav {
   max-width: 100%;
   height: 100%;
@@ -124,7 +137,10 @@
   }
 }
 
-@media (min-height: 800px) {
+@media (min-height: 2000px) {
+  .heading {
+    font-size: 50pt;
+  }
   .navbar {
     height: 10vh;
   }
@@ -134,5 +150,16 @@
   .menu-item {
     height: 5vh;
     font-size: 1vw;
+  }
+  .icon-button {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-item {
+    height: 10vh;
+    width: 8vh;
+  }
+  .iconGraphic {
+    font-size: 3rem;
   }
 }
