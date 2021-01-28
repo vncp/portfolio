@@ -1,0 +1,109 @@
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: block;
+}
+
+.card {
+  background-color: #9a8c98;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+/*Card Topic*/
+.card h5 {
+  font-family: "karla", sans-serif;
+  padding-left: 10px;
+  color: #b9adb7;
+  font-size: 19pt;
+  opacity: 0.5;
+  margin: 12px 12px;
+  letter-spacing: 1px;
+}
+
+/*Project Name*/
+.card h2 {
+  color: #b9adb7;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20pt;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+/*Project Links*/
+.card a {
+  color: #fff;
+  display: inline-block;
+  opacity: 0.6;
+  font-size: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  position: relative;
+  bottom: 5px;
+}
+
+.chevron {
+  color: #fff;
+  opacity: 0.7;
+  position: relative;
+  top: 7px;
+  right: 13px;
+}
+
+.card-overview {
+  background-color: #22223b;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-width: 240px;
+}
+
+.card-info {
+  font-size: 13pt;
+  font-weight: 1;
+  padding: 15px;
+  position: relative;
+  width: 55vw;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+}
+
+.card-status {
+  font-size: 17px;
+  color: rgb(74, 64, 83);
+  opacity: 0.4px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.card-start-date {
+  width: 100%;
+  text-align: left;
+  opacity: 0.7;
+  font-size: 12px;
+}

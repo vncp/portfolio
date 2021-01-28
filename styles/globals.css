@@ -1,3 +1,5 @@
+/*https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4*/
+
 @font-face {
   font-family: "Robotto";
   src: url("../public/fonts/Roboto/RobotoMono-VariableFont_wght.ttf");
@@ -32,15 +34,17 @@
 .wip {
   font-size: 4vh;
   max-width: 60vw;
+  padding-top: 5vh;
 }
 
 #projects {
   height: 60vh;
   font-family: Karla;
-  background-color: #a7c7b8;
+  background-color: #c9ada7;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .intro-content {

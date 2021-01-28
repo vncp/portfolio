@@ -16,20 +16,31 @@ const Home = () => {
     >
       <Head>
         <title>Vincent Pham</title>
+        <meta property="og:image" content="http://vncp.me/ogimg.jpg"></meta>
+        <meta property="og:title" content="Vincent Pham - Portfolio"></meta>
+        <meta property="og:url" content="http://vncp.me/"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta
+          property="og:description"
+          content="Portfolio site consisting of an online resume, projects, and and a soon to be blog!"
+        ></meta>
       </Head>
       <Navbar title="vincent pham"></Navbar>
       <div className="intro-content">
         <div className="intro-container" style={{ margin: "auto" }}>
-          <CodeFrame></CodeFrame>
+          <CodeFrame />
         </div>
         <div id="resume" className="intro-container">
-          <Resume></Resume>
+          <Resume />
         </div>
-        <div id="projects">
+        <div id="projects" style={{ height: "50vh" }}>
           <h1 className="wip">
-            <b>Work in progress!</b>
-            <br />
-            <br /> Hope you like what I have so far!
+            <b>
+              Check out my{" "}
+              <u>
+                <a href="/projects">projects!</a>
+              </u>
+            </b>
           </h1>
         </div>
       </div>

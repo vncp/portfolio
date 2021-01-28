@@ -133,8 +133,8 @@ const Resume = () => {
     <div className={styles.root}>
       <div className={styles.background}>
         <div className={styles.heading}>Résumé</div>
-        <ResumeEntry title="Education" entries={education}></ResumeEntry>
         <ResumeEntry title="Work" entries={work}></ResumeEntry>
+        <ResumeEntry title="Education" entries={education}></ResumeEntry>
       </div>
     </div>
   );

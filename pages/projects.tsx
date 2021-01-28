@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import Head from "next/head";
+import ProjectView from "../components/ProjectView";
 
 const Projects = () => {
   return (
@@ -18,10 +19,10 @@ const Projects = () => {
       </Head>
       <Navbar title="projects"></Navbar>
       <div id="projects" style={{ height: "100vh" }}>
+        <h1 className="wip"></h1>
+        <ProjectView />
         <h1 className="wip">
-          <b>Work in progress!</b>
-          <br />
-          <br /> Hope you like what I have so far!
+          <b>In progress, more to come!</b>
         </h1>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
 import Rotation from "../components/Rotation";
-import { useState } from "react";
 
 const CodeFrame = () => {
   return (
@@ -49,8 +48,8 @@ const CodeFrame = () => {
           </p>
           <p className={styles.output}>
             '
-            <a href="/pdf/CV-VincentPham.pdf" className={styles.link}>
-              CV-VincentPham.pdf
+            <a href="/pdf/Resume-VincentPham.pdf" className={styles.link}>
+              Resume-VincentPham.pdf
             </a>
             '
           </p>
@@ -60,9 +59,18 @@ const CodeFrame = () => {
           </p>
           <p className={styles.command} style={{ marginBottom: "20px" }}>
             {">> ./jump "}
-            <a href="#">home{` `}</a>
-            <a href="#resume">resume{` `}</a>
-            <a href="#projects">projects</a>
+            <a className={styles.link} href="#">
+              home{` `}
+            </a>
+            <a className={styles.link} href="#resume">
+              resume{` `}
+            </a>
+            <a className={styles.link} href="/about">
+              about{" "}
+            </a>
+            <a className={styles.link} href="/projects">
+              projects
+            </a>
             <span className={styles.blink}>_</span>
           </p>
         </div>
