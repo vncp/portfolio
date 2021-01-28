@@ -1,6 +1,10 @@
 .root {
   width: 100vw;
   height: auto;
+  --heading-size: 1.5vw;
+  --title-size: 1.2vw;
+  --strong-size: 1.1vw;
+  --normal-size: 1vw;
 }
 
 .background {
@@ -13,7 +17,7 @@
 
 .heading {
   color: rgb(29, 29, 29);
-  font-size: 18pt;
+  font-size: var(--heading-size);
   font-family: RobottoB, sans-serif;
   margin-top: 100px;
   margin-bottom: 30px;
@@ -29,12 +33,13 @@
 }
 
 .topicTitle {
-  font-size: 22pt;
+  font-size: var(--title-size);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 60%;
   margin: 5px 0;
+  color: rgb(110, 110, 110);
 }
 
 .titleSeparator {
@@ -46,7 +51,7 @@
 }
 
 .entryTitleTopic {
-  font-size: 14pt;
+  font-size: var(--strong-size);
   margin-bottom: 20px;
 }
 
@@ -56,5 +61,21 @@
 }
 
 .entryContent {
-  font-size: 19px;
+  font-size: var(--normal-size);
+}
+
+@media (max-width: 1800px) {
+  .root {
+    --heading-size: 30pt;
+    --title-size: 20pt;
+    --strong-size: 18pt;
+    --normal-size: 15pt;
+  }
+}
+
+@media (max-width: 1300px) {
+  .entryComment {
+    position: absolute;
+    opacity: 0;
+  }
 }

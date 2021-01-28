@@ -17,6 +17,13 @@ const Blog = () => {
         <title>Blog - Vincent Pham</title>
       </Head>
       <Navbar title="blog"></Navbar>
+      <div id="projects" style={{ height: "100vh" }}>
+        <h1 className="wip">
+          <b>Work in progress!</b>
+          <br />
+          <br /> Hope you like what I have so far!
+        </h1>
+      </div>
     </div>
   );
 };

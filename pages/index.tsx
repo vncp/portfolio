@@ -19,14 +19,18 @@ const Home = () => {
       </Head>
       <Navbar title="vincent pham"></Navbar>
       <div className="intro-content">
-        <div className="intro-bold" style={{ fontSize: "30pt" }}>
-          Why hello there! (I was hiding)
-        </div>
-        <div className="intro-container">
+        <div className="intro-container" style={{ margin: "auto" }}>
           <CodeFrame></CodeFrame>
         </div>
-        <div className="intro-container">
+        <div id="resume" className="intro-container">
           <Resume></Resume>
+        </div>
+        <div id="projects">
+          <h1 className="wip">
+            <b>Work in progress!</b>
+            <br />
+            <br /> Hope you like what I have so far!
+          </h1>
         </div>
       </div>
     </div>

@@ -2,13 +2,6 @@ import { RestaurantMenuTwoTone } from "@material-ui/icons";
 import ResumeEntry, { Entry } from "./ResumeEntry";
 import styles from "../styles/Resume.module.css";
 
-const education: Entry = {
-  entryTitle: "University of Nevada, Reno",
-  entryTitleDescriptor: "Computer Science & Engineering B.S. | Math Minor",
-  entryComment1: "2019 - Current",
-  entryComment2: "Reno, NV",
-};
-
 const classes = [
   "Object Oriented Programming",
   "Data Structures",
@@ -24,6 +17,38 @@ const classes = [
   "Calculus",
   "Probability & Statistics",
 ];
+const education = [
+  {
+    entryTitle: "University of Nevada, Reno",
+    entryTitleDescriptor: "Computer Science & Engineering B.S. | Math Minor",
+    entryComment1: "2019 - Current",
+    entryComment2: "Reno, NV",
+    content: (
+      <>
+        Relevant Coursework:
+        <ul
+          style={{
+            listStyleType: "circle",
+            marginLeft: "40px",
+            marginTop: "15px",
+          }}
+        >
+          {classes.map((line) => (
+            <li style={{ margin: ".5vh 0" }} key={line}>
+              {line}
+            </li>
+          ))}
+        </ul>
+      </>
+    ),
+  },
+  {
+    entryTitle: "University of Nevada, Reno",
+    entryTitleDescriptor: "Neuroscience B.S",
+    entryComment1: "2016 - Current",
+    entryComment2: "Reno, NV",
+  },
+];
 
 const work: Entry = {
   entryTitle: "University of Nevada, Reno",
@@ -37,20 +62,7 @@ const Resume = () => {
     <div className={styles.root}>
       <div className={styles.background}>
         <div className={styles.heading}>Résumé</div>
-        <ResumeEntry title="Education" entries={[education]}>
-          Relevant Coursework:
-          <ul
-            style={{
-              listStyleType: "circle",
-              marginLeft: "40px",
-              marginTop: "15px",
-            }}
-          >
-            {classes.map((line) => (
-              <li style={{ margin: "5px 0" }}>{line}</li>
-            ))}
-          </ul>
-        </ResumeEntry>
+        <ResumeEntry title="Education" entries={education}></ResumeEntry>
         <ResumeEntry title="Work" entries={[work]}></ResumeEntry>
       </div>
     </div>

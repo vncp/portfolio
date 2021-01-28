@@ -6,6 +6,7 @@ export interface Entry {
   entryTitleDescriptor?: string;
   entryComment1?: string;
   entryComment2?: string;
+  content?: JSX.Element;
 }
 
 interface Props {
@@ -28,20 +29,20 @@ const ResumeEntry: React.FC<Props> = ({ title = "", entries, children }) => {
         <div />
       )}
       {entries.map((entry) => (
-        <div style={{ width: "60%", height: "auto" }}>
+        <div style={{ width: "60%", height: "auto", marginBottom: ".8vh" }}>
           <div className={styles.entryTitleTopic}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span className={styles.entryTitle}>{entry.entryTitle}</span>
-              <span>{entry.entryComment1}</span>
+              <span className={styles.entryComment}>{entry.entryComment1}</span>
             </div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span className={styles.entryTitle}>
                 {entry.entryTitleDescriptor}
               </span>
-              <span>{entry.entryComment2}</span>
+              <span className={styles.entryComment}>{entry.entryComment2}</span>
             </div>
           </div>
-          <div className={styles.entryContent}>{children}</div>
+          <div className={styles.entryContent}>{entry.content}</div>
         </div>
       ))}
     </div>

@@ -6,7 +6,6 @@ import HomeIcon from "@material-ui/icons/Home";
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-import { CSSTransition } from "react-transition-group";
 
 export const Navbar = (props) => {
   return (

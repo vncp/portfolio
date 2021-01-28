@@ -1,6 +1,7 @@
 import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
 import Rotation from "../components/Rotation";
+import { useState } from "react";
 
 const CodeFrame = () => {
   return (
@@ -15,8 +16,14 @@ const CodeFrame = () => {
       <div className={styles.frame}>
         <div className={styles.windowTitle}>
           <span></span>info
-          <span style={{ position: "relative", right: "4px" }}>
-            <CloseIcon />
+          <span>
+            <CloseIcon
+              style={{
+                fontSize: "1vw",
+                marginTop: ".08vw",
+                marginRight: ".5vw",
+              }}
+            />
           </span>
         </div>
         <div className={styles.terminal}>
@@ -49,10 +56,15 @@ const CodeFrame = () => {
             </a>
             '
           </p>
-          <p className={styles.command}>{">>"}Vincent.hobbies</p>
-          <p className={styles.output}>['running', 'coding', 'reading']</p>
-          <p className={styles.command}>
-            {">>"}
+          <p className={styles.command}>{">> "}Vincent.hobbies</p>
+          <p className={styles.output}>
+            ['running', 'coding', 'reading', 'photography']
+          </p>
+          <p className={styles.command} style={{ marginBottom: "20px" }}>
+            {">> ./jump "}
+            <a href="#">home{` `}</a>
+            <a href="#resume">resume{` `}</a>
+            <a href="#projects">projects</a>
             <span className={styles.blink}>_</span>
           </p>
         </div>
