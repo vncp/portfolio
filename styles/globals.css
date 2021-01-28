@@ -31,6 +31,7 @@
 
 .wip {
   font-size: 4vh;
+  max-width: 60vw;
 }
 
 #projects {
@@ -82,7 +83,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  box-shadow: inset 2px 1px 20px #0f7173;
+  box-shadow: inset 2px 1px 20px #818ebe;
   border-radius: 2px;
 }
 

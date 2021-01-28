@@ -29,7 +29,7 @@ const ResumeEntry: React.FC<Props> = ({ title = "", entries, children }) => {
         <div />
       )}
       {entries.map((entry) => (
-        <div className={styles.entryContent}>
+        <div className={styles.entryContainer}>
           <div className={styles.entryTitleTopic}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <span className={styles.entryTitle}>{entry.entryTitle}</span>

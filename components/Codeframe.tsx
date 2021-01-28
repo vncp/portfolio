@@ -8,9 +8,7 @@ const CodeFrame = () => {
     <div className={styles.background}>
       <h1 className={styles.heading}>
         I'm an aspiring{" "}
-        <Rotation
-          words={["engineer", "developer", "designer", "creator"]}
-        ></Rotation>
+        <Rotation words={["engineer", "developer", "designer"]}></Rotation>
         <span className={styles.blink}>|</span>
       </h1>
       <div className={styles.frame}>
