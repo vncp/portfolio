@@ -1,5 +1,5 @@
 # Portfolio Site
-[https://vncp.me](vncp.me)
+[vncp.me](https://vncp.me/)
 
 A site to show off my projects, talk about my challenges/experiences, and present myself!
 
