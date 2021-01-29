@@ -68,13 +68,9 @@
 @keyframes slide-down {
   0% {
     opacity: 0%;
-    transform: translateY(500%);
-    transform: translateX(-30%);
   }
   100% {
     opacity: var(--dropdown-opacity);
-    transform: translateY(-50%);
-    transform: translateX(-30%);
   }
 }
 
@@ -131,9 +127,12 @@
   transition: all var(1000ms) ease;
 }
 
-@media (max-height: 800px) {
+@media (max-width: 1024px) {
   .navbar {
     --dropdown-opacity: 90%;
+  }
+  .dropdown {
+    width: 80vw;
   }
 }
 

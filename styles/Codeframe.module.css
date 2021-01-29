@@ -55,7 +55,7 @@
 .windowTitle {
   position: relative;
   top: 0.25vw;
-  font-size: 1vw;
+  font-size: 2vh;
   font-family: "Source Code Pro";
   display: flex;
   flex-direction: row;
@@ -159,5 +159,18 @@
 @media (min-width: 2000px) {
   .heading {
     font-size: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .command {
+    font-size: 3.25vw;
+    margin-bottom: 30px;
+  }
+  .output {
+    font-size: 3.1vw;
+  }
+  .outputS {
+    font-size: 3.1vw;
   }
 }

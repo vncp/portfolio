@@ -16,6 +16,7 @@
   border-radius: 20px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
+  width: 50vw;
 }
 
 /*Card Topic*/
@@ -53,9 +54,9 @@
 
 .links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
 }
 
 .link {
@@ -73,8 +74,8 @@
 
 .card-overview {
   background-color: #22223b;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   min-width: 240px;
 }
 
@@ -106,4 +107,48 @@
   text-align: left;
   opacity: 0.7;
   font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 95vw;
+    flex-direction: column;
+  }
+  .card-overview {
+    width: 95vw;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  .card-info {
+    width: 94%;
+  }
+  .links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 2000px) {
+  .card {
+    display: flex;
+  }
+  .card h5 {
+    font-size: 7vh;
+  }
+  .card h2 {
+    font-size: 5vh;
+  }
+  .card-overview {
+    flex-grow: 1;
+  }
+  .card-info {
+    flex-grow: 3;
+    font-size: 2vh;
+  }
+  .card-start-date {
+    font-size: 1.5vh;
+  }
+  .card-status {
+    font-size: 1.8vh;
+  }
 }
