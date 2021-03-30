@@ -39,14 +39,33 @@ const Projects = () => {
       <div className={styles.background}>
         <motion.div
           style={{ position: "relative" }}
-          initial={{ opacity: 0, right: "100%" }}
+          initial={{ opacity: 0, right: "40%" }}
           animate={{ opacity: 1, right: "0%" }}
-          transition={{ duration: 2.5 }}
+          transition={{ duration: 1 }}
         >
           <Project
             title="Remote Linux Access & Administration"
             body="A web application allowing computer science students to access Linux systems remotely through a web browser. Also worked on an interface that allowed students to manage their own instances remotely or for staff to easily orchestrate administrative tasks."
             projectDocument={projectDocument1}
+          />
+        </motion.div>
+        <motion.div
+          style={{ position: "relative" }}
+          initial={{ opacity: 0, left: "40%" }}
+          animate={{ opacity: 1, left: "0%" }}
+          transition={{ duration: 1, delay: 0.25 }}
+        >
+          <Project title="This Portfolio" body="yes." />
+        </motion.div>
+        <motion.div
+          style={{ position: "relative" }}
+          initial={{ opacity: 0, right: "40%" }}
+          animate={{ opacity: 1, right: "0%" }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <Project
+            title="Productivity Journaling Web App"
+            body="Simple journaling app created using React and a Python backend."
           />
         </motion.div>
         <motion.div

@@ -37,12 +37,24 @@ const Home = () => {
         <div id="projects" style={{ height: "50vh" }}>
           <h1 className="wip">
             <b>
+              Learn more{" "}
+              <u>
+                <Link href="/about">
+                  <a href="/about">about me</a>
+                </Link>
+              </u>
+              .
+            </b>
+            <br />
+            <br />
+            <b>
               Check out my{" "}
               <u>
                 <Link href="/projects">
-                  <a href="/projects">projects!</a>
+                  <a href="/projects">projects</a>
                 </Link>
               </u>
+              !
             </b>
           </h1>
         </div>
