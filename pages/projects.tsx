@@ -1,6 +1,24 @@
 import { Navbar } from "../components/Navbar";
 import Head from "next/head";
-import ProjectView from "../components/ProjectView";
+import Project from "../components/Project";
+import styles from "../styles/Project.module.css";
+import { motion } from "framer-motion";
+
+const projectDocument1 = (
+  <>
+    <h1>Remote Instance Management</h1>
+    <br />
+    <p>
+      This is the instance management interface that I created for staff workers
+      to use.
+    </p>
+    <img
+      src="/images/projects/instancemanagement.png"
+      alt="Example of staff page"
+      style={{ width: "100%" }}
+    />
+  </>
+);
 
 const Projects = () => {
   return (
@@ -18,12 +36,25 @@ const Projects = () => {
         <title>Projects - Vincent Pham</title>
       </Head>
       <Navbar title="projects"></Navbar>
-      <div id="projects" style={{ height: "100vh" }}>
-        <h1 className="wip"></h1>
-        <ProjectView />
-        <h1 className="wip">
-          <b>In progress, more to come!</b>
-        </h1>
+      <div className={styles.background}>
+        <motion.div
+          style={{ position: "relative" }}
+          initial={{ opacity: 0, right: "100%" }}
+          animate={{ opacity: 1, right: "0%" }}
+          transition={{ duration: 2.5 }}
+        >
+          <Project
+            title="Remote Linux Access & Administration"
+            body="A web application allowing computer science students to access Linux systems remotely through a web browser. Also worked on an interface that allowed students to manage their own instances remotely or for staff to easily orchestrate administrative tasks."
+            projectDocument={projectDocument1}
+          />
+        </motion.div>
+        <motion.div
+          style={{ position: "relative" }}
+          initial={{ opacity: 0, left: "100%" }}
+          animate={{ opacity: 1, left: "0%" }}
+          transition={{ duration: 2.5, delay: 0.1 }}
+        ></motion.div>
       </div>
     </div>
   );

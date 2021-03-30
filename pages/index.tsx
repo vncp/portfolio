@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import CodeFrame from "../components/Codeframe";
 import Resume from "../components/Resume";
-import Link from "next/link"
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -39,7 +39,9 @@ const Home = () => {
             <b>
               Check out my{" "}
               <u>
-                <Link href="/projects"><a href="/projects">projects!</a></Link>
+                <Link href="/projects">
+                  <a href="/projects">projects!</a>
+                </Link>
               </u>
             </b>
           </h1>

@@ -1,7 +1,7 @@
 import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
-import Rotation from "../components/Rotation";
-import Link from "next/link"
+import Rotation from "./Rotation";
+import Link from "next/link";
 
 const CodeFrame = () => {
   return (
@@ -61,9 +61,13 @@ const CodeFrame = () => {
           <p className={styles.command} style={{ marginBottom: "20px" }}>
             {">> ./jump "}
             <a className={styles.link} href="#resume">
-              resume{' '}
+              resume{" "}
             </a>
-            <Link href="/projects"><a className={styles.link} href="/projects">projects</a></Link>
+            <Link href="/projects">
+              <a className={styles.link} href="/projects">
+                projects
+              </a>
+            </Link>
             <span className={styles.blink}>_</span>
           </p>
         </div>

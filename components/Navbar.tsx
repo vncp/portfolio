@@ -75,13 +75,16 @@ export const DropdownMenu = (props) => {
         >
           Projects
         </DropdownItem>
+      </div>
+    </div>
+  );
+};
+
+/*
         <DropdownItem
           href="/blog"
           leftIcon={<LibraryBooksIcon className={styles.iconGraphic} />}
         >
           Blog
         </DropdownItem>
-      </div>
-    </div>
-  );
-};
+*/

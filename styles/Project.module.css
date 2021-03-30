@@ -1,154 +1,83 @@
 .background {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  font-family: "Karla";
+  background-color: rgb(230, 160, 139);
   min-height: 100vh;
-  margin: 0;
-}
-
-.container {
-  display: block;
-}
-
-.card {
-  background-color: #9a8c98;
-  border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  width: 50vw;
-}
-
-/*Card Topic*/
-.card h5 {
-  font-family: "karla", sans-serif;
-  padding-left: 10px;
-  color: #b9adb7;
-  font-size: 19pt;
-  opacity: 0.5;
-  margin: 12px 12px;
-  letter-spacing: 1px;
-}
-
-/*Project Name*/
-.card h2 {
-  color: #b9adb7;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 20pt;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
-
-/*Project Links*/
-.card a {
-  color: #fff;
-  display: inline-block;
-  opacity: 0.6;
-  font-size: 15px;
-  margin-top: 30px;
-  text-decoration: none;
-  text-align: center;
-  padding: 0 10px;
-}
-
-.links {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: left;
+  align-items: center;
+  padding-top: 100px;
 }
 
-.link {
+.project-container {
+  margin-top: 100px;
+  width: 60vw;
+  background-color: #f1f1f1;
+  font-size: 20pt;
+  border-radius: 20px;
+}
+
+.project-button:hover {
+  background-color: rgb(187, 207, 224);
+}
+
+.project-button {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.project-content {
   position: relative;
-  bottom: 5px;
-}
-
-.chevron {
-  color: #fff;
-  opacity: 0.7;
-  position: relative;
-  top: 7px;
-  right: 13px;
-}
-
-.card-overview {
-  background-color: #22223b;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  min-width: 240px;
-}
-
-.card-info {
-  font-size: 13pt;
-  font-weight: 1;
-  padding: 15px;
-  position: relative;
-  width: 55vw;
-}
-
-.meta {
+  overflow: hidden;
   display: flex;
-  flex-direction: row;
-  justify-content: space;
 }
 
-.card-status {
-  font-size: 17px;
-  color: rgb(74, 64, 83);
-  opacity: 0.4px;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  text-align: right;
+.img-open-blur {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  background-color: rgb(255, 255, 255);
+}
+.project-doc {
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+  position: absolute;
+  top: 100px;
+  left: -250px;
+  z-index: 9;
+  padding: 50px auto;
+  width: 80vw;
+  font-size: x-large;
 }
 
-.card-start-date {
-  width: 100%;
-  text-align: left;
-  opacity: 0.7;
-  font-size: 12px;
+.doc-exit:hover {
+  background-color: rgb(236, 86, 86);
+  color: white;
 }
 
-@media (max-width: 720px) {
-  .card {
-    width: 95vw;
-    flex-direction: column;
-  }
-  .card-overview {
-    width: 95vw;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 0px;
-  }
-  .card-info {
-    width: 94%;
-  }
-  .links {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.doc-exit {
+  position: fixed;
+  background-color: rgb(214, 211, 211);
+  border-radius: 5px;
+  right: 20px;
+  top: 120px;
 }
 
-@media (min-width: 2000px) {
-  .card {
-    display: flex;
-  }
-  .card h5 {
-    font-size: 7vh;
-  }
-  .card h2 {
-    font-size: 5vh;
-  }
-  .card-overview {
-    flex-grow: 1;
-  }
-  .card-info {
-    flex-grow: 3;
-    font-size: 2vh;
-  }
-  .card-start-date {
-    font-size: 1.5vh;
-  }
-  .card-status {
-    font-size: 1.8vh;
-  }
+.project-text {
+  padding: 50px 50px 20px 50px;
+  line-height: 18pt;
+}
+
+.project-title {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-body {
+  font-size: 1.2vw;
+  text-align: justify;
 }

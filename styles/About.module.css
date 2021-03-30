@@ -1,0 +1,16 @@
+.profile-container {
+  display: flex;
+  position: relative;
+  font-size: 3vw;
+}
+
+.about-body {
+  width: 40vw;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+.about-container {
+  position: absolute;
+  top: 0px;
+}
