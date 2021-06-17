@@ -1,7 +1,7 @@
-import styles from "../styles/Codeframe.module.css";
 import CloseIcon from "@material-ui/icons/Close";
-import Rotation from "./Rotation";
 import Link from "next/link";
+import styles from "../styles/Codeframe.module.css";
+import Rotation from "./Rotation";
 
 const CodeFrame = () => {
   return (
